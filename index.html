@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      :root {
+        --clr-primary-1: hsl(212, 45%, 89%);
+        --clr-primary-2: hsl(216, 15%, 48%);
+        --clr-primary-3: hsl(218, 44%, 22%);
+
+        --clr-neutral-1: hsl(0, 0%, 100%);
+      }
+      html {
+        color-scheme: light;
+        font-family: system-ui;
+      }
+      body {
+        margin: 0;
+        min-block-size: 100svh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-size: 1.25rem;
+        background-color: var(--clr-primary-1);
+      }
+      img {
+        display: block;
+        border-radius: 1rem;
+        max-width: 100%;
+        height: auto;
+      }
+      .qr-code-section {
+        width: 320px;
+        height: 499px;
+        background-color: var(--clr-neutral-1);
+        padding: 1em;
+        border-radius: 1.25rem;
+      }
+      .attribution {
+        font-size: 0.625rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .section-title {
+        color: var(--clr-primary-3);
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      p {
+        color: var(--clr-primary-2);
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin: 1rem 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="qr-code-section">
+      <div class="image-div">
+        <img src="images/image-qr-code.png" />
+      </div>
+
+      <h1 class="section-title">
+        Improve your front-end skills by building projects
+      </h1>
+      <p>
+        Scan the QR code to visit Frontend Mentor and take your coding skills to
+        the next level
+      </p>
+    </section>
+  </body>
+</html>
